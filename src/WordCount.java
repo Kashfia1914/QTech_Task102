@@ -24,28 +24,28 @@ public class WordCount {
             String line;
 
             while ((line = reader.readLine()) != null) {
-                // Split the line into words using space as a delimiter
+
                 String[] words = line.split("\\s+");
 
-                // Process each word
+
                 for (String word : words) {
-                    // Remove leading and trailing punctuation
+
                     word = word.replaceAll("^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$", "");
 
-                    // Update word count in the map
+
                     wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
                 }
             }
 
         } catch (IOException e) {
-            e.printStackTrace(); // You can handle the exception as needed
+            e.printStackTrace();
         }
 
         return wordCountMap;
     }
 
     private static void displayWordCount(Map<String, Integer> wordCountMap) {
-        // Display word count in alphabetical order
+
         for (Map.Entry<String, Integer> entry : wordCountMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
