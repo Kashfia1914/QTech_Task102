@@ -1,5 +1,5 @@
 **Compile the Java Program: **
-If you haven't already, save the Java code provided in a file named WordCount.java. Open a terminal or command prompt and navigate to the directory containing the WordCount.java file. Then compile the code using the javac command:
+Save the Java code provided in a file named WordCount.java. Open a terminal or command prompt and navigate to the directory containing the WordCount.java file. Then compile the code using the javac command:
 
 **Prepare Input Text File: **
 Make sure you have a text file containing the text you want to analyze. You can create a new text file or use an existing one. Note the file path for later use.
